@@ -331,12 +331,12 @@
 // console.log(b);
 
 //const
-const i=10; //Global scope
-if(true){
-    const j=20; //Block scope
-}
-console.log(i);
-console.log(j);
+// const i=10; //Global scope
+// if(true){
+//     const j=20; //Block scope
+// }
+// console.log(i);
+// console.log(j);
 
 
 
