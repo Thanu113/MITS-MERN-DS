@@ -338,5 +338,78 @@
 // console.log(i);
 // console.log(j);
 
+//promise(ES6)
+// const promise=new Promise((resolve,reject)=>{
+//     var success=true;
+//     if(success){
+//         resolve("Task Completed");
+//     }
+//     else{
+//         reject("Not completed");
+//     }
+// })
+// promise.then((message)=>{
+//     console.log(message);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+
+//setTimeout
+// const promise=new Promise((resolve,reject)=>{
+//     var success=true;
+//     if(success){
+//         setTimeout(()=>{
+//             if(success){
+//         resolve("Task Completed");
+//     }
+//     else{
+//        reject("Not completed");
+//   }
+//             resolve("Task Completed");
+
+//         },5000);
+        
+//     }
+//     else{
+//         reject("Not completed");
+//     }
+// })
+// promise.then((message)=>{
+//     console.log(message);
+// }).catch((err)=>{
+//     console.log(err);
+// })
+//set Interval
+// var count=1
+// const IntervalCount=setInterval(()=>
+// {
+//     console.log(count);
+//     count++;
+//     if(count>5)
+//     {
+//         clearInterval(IntervalCount)
+//     }
+// },2000)
+//fetch user data
+// const getData=()=>{
+//     return fetch("https://jsonplaceholder.typicode.com/users")
+// }
+// getData().then((res)=>res.json())
+// .then((data)=>console.log(data))
+// .catch((err)=>console.log(err));
 
 
+
+//async and await
+const getData=async()=>
+{
+    try{
+        const res=await fetch("https://jsonplaceholder.typicode.com/users")
+        const data=await res.json();
+        console.log(data);
+    }catch(err)
+    {
+        console.log(err)
+    }
+}
+getData();
