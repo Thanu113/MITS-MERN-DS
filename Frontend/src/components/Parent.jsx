@@ -1,10 +1,23 @@
 import React from 'react'
 import Child from './Child'
 
-const Parent= () => {
+const Parent = () => {
   return (
     <div>
-      <Child name="Thanu" age={21} isActive={true}/>
+        <Child name="Thanu" age={21} isActive={true} food={["Biriyani","Curd","Lemon"]}
+        contact={{
+          mobile:1234567890,
+          email:"Thanu45@gmail.com"
+
+        }}/>
+        <Child name="Charan" age={23} isActive={true} food={["Biriyani","Curd","Lemon"]}
+        contact={{
+          mobile:1234567890,
+          email:"charan45@gmail.com"
+
+        }}/>
+
+
     </div>
   )
 }
