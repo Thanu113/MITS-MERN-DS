@@ -8,6 +8,7 @@ const todoRouters=require('./routers/todoRouter')
 const cors=require('cors');
 dotenv.config();
 connectDB()
+app.use(cors());
 app.use(express.json());
 app.use(egRouters);
 app.use('/api/user',userRouters);
